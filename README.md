@@ -12,6 +12,8 @@ A tiny, programmable http-server crafting- framework that is built with security
 # Setup
 ```pip install sonoma```
 
+----
+
 
 # Basic Usage
 
@@ -26,12 +28,40 @@ server.run()
 
 ### Browser
 ```
-            Hello World!
+                Hello World!
 This is the default webpage for Sonoma/1.0.x.
 ```
 
-# Advanced Usage: Default Handler
+----
 
+# Basic Usage: Custom Response
+### Server
+```python
+from sonoma import defaults, httpServer
+
+server = httpServer('127.0.0.1', 8888)
+
+defaults.defaultResponse = """ 
+    <!DOCTYPE html><html><head>
+    <style>html, body{ margin: 0 auto;text-align:center; }</style>
+    </head><body>
+    <h1 style=\"text-align:center;\">Hello World!</h1>
+    <span>This is a modified version of the default webpage for %s.</span>
+    </body></html>
+    """ % defaults.serverName 
+
+server.run()
+```
+
+### Browser
+```
+                        Hello World!
+This is a modified version of the default webpage for Sonoma/1.0.9.
+```
+
+----
+
+# Advanced Usage: Default Handler
 ### Server
 ```python
 from sonoma import httpServer, defaults
@@ -91,6 +121,8 @@ server.run()
 
 ### Browser
 ![](https://cdn.discordapp.com/attachments/796917179987656774/809904244387348490/unknown.png)
+
+----
 
 
 # Conclusion
