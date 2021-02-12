@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: sonoma
+Version: 1.0.7
+Summary: A tiny, programmable http-server crafting framework that is built with security and simplicity in mind.
+Home-page: https://github.com/hostinfodev/sonoma
+Author: hostinfodev
+Author-email: support@host-info.net
+License: MIT
+Description: # Sonoma
+         A tiny, programmable http-server crafting framework that is built with security and simplicity in mind.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
