@@ -7,5 +7,5 @@ python:
   - "3.9-dev"  # 3.9 development branch
   - "nightly"  # nightly build
 install:
-  - python setup.py -q install # Installs the local branch
+  - python setup.py install # Installs the local branch
   
