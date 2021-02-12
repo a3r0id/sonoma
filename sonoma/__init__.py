@@ -162,7 +162,8 @@ class httpServer(object):
                     if unit != "" and ": " in unit:
                         requestHeaders.append([unit.split(': ')[0], unit.split(': ')[1]])
         
-                # PROCESS REQUEST - VOID
+                # PROCESS REQUEST - SEND TO HANDLER
+                # THINK OF ALL OF THESE PARAMETERS AS THE $_SERVER (PHP) VARIABLE
                 if self.handler is not None:
                     responseStatusLine, responseHeaders, responseBody = self.handler(self, requestStatusLine, requestHeaders, requestBody, client_connection, client_address)
 
