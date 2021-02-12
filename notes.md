@@ -1,3 +1,13 @@
 ## TODOS:
-- Check header key/val for length, allow lib users to choose the max header sizes. `413 - Entity Too Large`
-- Write example handlers and allow import from `handlers/*`. Add JSON GET/POST examples.
+- [Critical] Check header key/val for length, allow lib users to choose the max header sizes. `413 - Entity Too Large`
+- [Critical] Validate formats for:
+  - Status Line
+  - Headers
+  - Body
+- [Moderate] Write example handlers and allow import from `handlers/*`.
+- [Moderate] Write example handler with POST example.
+- [Moderate] Write example handler with JSON GET/POST examples.
+- [Moderate] Write example handler with HTTP Sessions example.
+- [Moderate] Write example handler with Rate-Limiting example.
+- [Moderate] Write example handler with redirect example.
+- [Moderate] Write example handler with Basic-Auth example.
