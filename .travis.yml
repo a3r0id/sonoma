@@ -8,5 +8,4 @@ python:
   - "nightly"  # nightly build
 install:
   - python setup.py -q install # Installs the local branch
-script: pytest # Tests the installation (?)
   
