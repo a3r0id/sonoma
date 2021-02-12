@@ -12,9 +12,3 @@ defaults.defaultResponse = """
     """ % defaults.serverName 
 
 server.run()
-
-
-"""
-                        Hello World!
-This is a modified version of the default webpage for Sonoma/1.0.9.
-"""
