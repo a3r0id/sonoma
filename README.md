@@ -1,5 +1,7 @@
 # Sonoma
- A tiny, programmable http-server crafting framework that is built with security and simplicity in mind.
+[![PyPI version](https://badge.fury.io/py/sonoma.svg)](https://badge.fury.io/py/sonoma)
+
+A tiny, programmable http-server crafting framework that is built with security and simplicity in mind.
 
 ----
 
