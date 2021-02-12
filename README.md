@@ -1,6 +1,11 @@
 # Sonoma
  A tiny, programmable http-server crafting framework that is built with security and simplicity in mind.
 
+----
+
+![](https://imengine.prod.srp.navigacloud.com/?uuid=C31C28DA-402C-4C02-9083-6C8DACCF1556&type=primary&q=72&width=1024)
+
+----
 
 # Setup
 ```pip install sonoma```
