@@ -1,8 +1,8 @@
 
 """
-SONOMA/1.0.7
+SONOMA/1.0.8
 """
-__version__ = '1.0.7'
+__version__ = '1.0.8'
 # 2021 github.com/hostinfodev
 
 import socket
@@ -36,7 +36,6 @@ def defaultHandler(self, requestStatusLine, requestHeaders, requestBody, client_
     if requestStatusLine.split()[0].lower() == "get":
         responseStatusLine, responseHeaders = self.httpHeaders(HTTPStatus.OK, contentType="html")
         responseBody = defaults.defaultResponse
-        
         return (responseStatusLine, responseHeaders, responseBody)
 
     # SERVE HEAD
@@ -132,7 +131,6 @@ class httpServer(object):
             print('Listening on %s:%s ...' % self.vector)
 
             # [*i*] USE self.sock.close to close entire server socket. [*i*] 
-
             while True:    
 
                 # Wait for client connections
@@ -168,7 +166,7 @@ class httpServer(object):
                     responseStatusLine, responseHeaders, responseBody = self.handler(self, requestStatusLine, requestHeaders, requestBody, client_connection, client_address)
 
                 else:
-                    responseStatusLine, responseHeaders, responseBody = self.defaultHandler(requestStatusLine, requestHeaders, requestBody, client_connection, client_address)
+                    responseStatusLine, responseHeaders, responseBody = self.defaultHandler(self, requestStatusLine, requestHeaders, requestBody, client_connection, client_address)
                 
                 if len(responseBody):
                     responseHeaders.append(f'Content-Length: {str(len(responseBody))}')    
