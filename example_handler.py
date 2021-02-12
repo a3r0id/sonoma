@@ -11,9 +11,7 @@ def myHandler(self, requestStatusLine, requestHeaders, requestBody, client_conne
 
     print("Client: %s\n" % str(client_address))
 
-    headerStrings = []
-    for header in requestHeaders:
-        headerStrings.append("%s: %s\n" % (header[0], header[1]))   
+    headerStrings = ["%s: %s\n" % (header[0], header[1]) for header in requestHeaders]
 
     myCustomResponse = """
         <!DOCTYPE html><html><head>

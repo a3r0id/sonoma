@@ -10,6 +10,7 @@ import threading
 from http import HTTPStatus
 from logging import basicConfig
 import email.utils as eut
+from sys import stdout
 
 class defaults:
     httpVersion = "1.1" # DONT CHANGE THIS UNLESS YOU KNOW EXACLTY WHAT YOU ARE DOING!
@@ -128,7 +129,7 @@ class httpServer(object):
             self.sock_.bind(self.vector)
             self.sock_.listen(1)
 
-            print('Listening on %s:%s ...' % self.vector)
+            stdout.write('Listening @ http://%s:%s ...' % self.vector)
 
             # [*i*] USE self.sock.close to close entire server socket. [*i*] 
             while True:    
