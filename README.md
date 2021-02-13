@@ -61,7 +61,7 @@ This is a modified version of the default webpage for Sonoma/1.0.9.
 
 ----
 
-# Advanced Usage: Default Handler
+# Advanced Usage: Custom Handler
 ### Server
 ```python
 from sonoma import httpServer, defaults
