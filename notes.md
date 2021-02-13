@@ -1,6 +1,6 @@
 ## TODOS:
 - [Critical] Check header key/val for length, allow lib users to choose the max header sizes. `413 - Entity Too Large`
-- [Critical] Validate (request)formats for:
+- [Critical] Validate the request formats for the following:
   - Status Line
   - Headers
   - Body
