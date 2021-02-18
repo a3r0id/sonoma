@@ -5,10 +5,10 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="sonoma",
-    version="1.0.9",
+    version="1.0.11",
     author="hostinfodev",
     author_email="support@host-info.net",
-    description="A tiny, programmable http-server crafting- framework that is built with security and simplicity in mind.",
+    description="A tiny, programmable http-server crafting-framework that is built with security and simplicity in mind.",
     license="MIT",
     long_description=long_description,
     long_description_content_type="text/markdown",
