@@ -8,7 +8,7 @@ setuptools.setup(
     version="1.0.12",
     author="hostinfodev",
     author_email="support@host-info.net",
-    description="A tiny, programmable http-server crafting-framework that is built with security and simplicity in mind.",
+    description="A tiny, low-level, programmable http-server-crafting framework that is built with security and simplicity in mind.",
     license="MIT",
     long_description=long_description,
     long_description_content_type="text/markdown",
