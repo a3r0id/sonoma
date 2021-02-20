@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+sonoma/__init__.py
+sonoma.egg-info/PKG-INFO
+sonoma.egg-info/SOURCES.txt
+sonoma.egg-info/dependency_links.txt
+sonoma.egg-info/top_level.txt
