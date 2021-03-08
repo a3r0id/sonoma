@@ -3,9 +3,6 @@ __version__ = '1.0.12'
 __version_formal__ = f"SONOMA/{__version__}"
 # 2021 github.com/hostinfodev
 
-# TODO: IS SERVER BLOCKING :O ?
-# -> YES! FIX THIS!
-
 from datetime import date
 import socket
 from threading import Thread, Lock
